@@ -408,8 +408,3 @@ The main purpose of this article was to show you how to develop middleware and n
 ## Notes
 * The test suite is kind of slow because we run the `n.times { get users_url }` blocks a lot... I'm going to let you figure out a refactor of the test suite to increase the performance. A small pointer: think about running two response cycles (normal and abnormal) and caching the results so each test can use the cached responses.
 * There is one important case not tested in the suite and that is the moment the request limit has been reset. Normally you can use `travel` but the TTL is set in Redis and not in the Rails app. You can refactor the middleware to accept a configuration value for the window size and set it to a few seconds so that it can be tested.
-* The source op 
-
-
-
-
