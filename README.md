@@ -1,4 +1,6 @@
-# Rails application with rate limiting middleware as published to dev.to
+# Rails application with rate limiting middleware
+
+(Dev.to article: [https://dev.to/lorankloeze/how-to-create-middleware-in-your-rails-application-ep](https://dev.to/lorankloeze/how-to-create-middleware-in-your-rails-application-ep))
 
 Creating your own middleware in a Rails application is not something a lot of developers do or have to do. But when you want to add custom headers, authentication or some kind of rate limiting, you should definitely consider using middleware. I want to show you how you can implement a small rate limiter using your own middleware.
 
